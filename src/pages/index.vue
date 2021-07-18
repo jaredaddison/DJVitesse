@@ -1,15 +1,34 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, toRefs, reactive } from 'vue'
 import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-
 const name = ref('')
-
 const router = useRouter()
 const go = () => {
   if (name.value)
     router.push(`/hi/${encodeURIComponent(name.value)}`)
-}
+  }
+
+const dog = reactive{
+  n1: 1,
+  n2: 0.75,
+  n3: 132,
+  n4: 24, 
+  }
+
+const dogIVFT(() => {
+    const fluidRate = parse.int(dogn1
+  }
+
+const cat = reactive{
+  n1: 1,
+  n2: 0.75,
+  n3: 80,
+  n4: 24, 
+  }
+
+function dogFluid(() => {
+
+  }
 
 const { t } = useI18n()
 </script>
